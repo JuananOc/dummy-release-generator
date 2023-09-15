@@ -15,5 +15,3 @@ plugins:
     - message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
       assets:
         - CHANGELOG.md
-  - - "semantic-release-monorepo"
-    - monorepoDir: 'childs'
