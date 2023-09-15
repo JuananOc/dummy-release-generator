@@ -18,4 +18,4 @@ setup-release:
 
 ## release: creates a new release, generating the Changelog.md and the tag. The tag will be created in the commit of the branch, and will be added to master after the merge
 release:
-	  @npx semantic-release --debug
+	  @npx semantic-release --debug --no-ci
