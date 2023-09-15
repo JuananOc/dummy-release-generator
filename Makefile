@@ -14,7 +14,7 @@ setup:
 
 ## setup-release: install dependencies for the semantic release
 setup-release:
-	  @npm install @semantic-release/changelog @semantic-release/github conventional-changelog-conventionalcommits -D semantic-release-monorepo 
+	  @npm install -D semantic-release-monorepo semantic-release@v19.0.5 @semantic-release/changelog conventional-changelog-conventionalcommits
 
 ## release: creates a new release, generating the Changelog.md and the tag. The tag will be created in the commit of the branch, and will be added to master after the merge
 release:
