@@ -1,0 +1,15 @@
+debug: true
+ci: true
+extends: "semantic-release-monorepo"
+plugins:
+  - - "@semantic-release/commit-analyzer"
+    - preset: "conventionalcommits"
+  - - "@semantic-release/release-notes-generator"
+    - preset: "conventionalcommits"
+  - - "@semantic-release/changelog"
+    - changelogFile: "CHANGELOG.md"
+      changelogTitle: "# Changelog"
+  - - "@semantic-release/github"
+    - message: "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+      assets:
+        - CHANGELOG.md
